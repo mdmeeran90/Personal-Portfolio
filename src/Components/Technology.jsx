@@ -19,7 +19,6 @@ const iconVariants = (duration) => ({
   },
 });
 
-
 const Technology = () => {
   return (
     <div className="border border-neutral-800 pb-24">
@@ -41,7 +40,7 @@ const Technology = () => {
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-2 border-neutral-800 p-4"
+          className="p-4"
         >
           <FaHtml5 className="text-7xl text-red-600" />
         </motion.div>
@@ -49,7 +48,7 @@ const Technology = () => {
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-2 border-neutral-800 p-4"
+          className="p-4"
         >
           <FaCss3 className="text-7xl text-blue-600" />
         </motion.div>
@@ -57,7 +56,7 @@ const Technology = () => {
           variants={iconVariants(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-2 border-neutral-800 p-4"
+          className="p-4"
         >
           <FaJs className="text-7xl text-yellow-400" />
         </motion.div>
@@ -65,7 +64,7 @@ const Technology = () => {
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-2 border-neutral-800 p-4"
+          className="p-4"
         >
           <FaBootstrap className="text-7xl text-blue-900" />
         </motion.div>
@@ -73,7 +72,7 @@ const Technology = () => {
           variants={iconVariants(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-2 border-neutral-800 p-4"
+          className="p-4"
         >
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
@@ -81,7 +80,7 @@ const Technology = () => {
           variants={iconVariants(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-2 border-neutral-800 p-4 "
+          className="p-4 "
         >
           <RiTailwindCssFill className="text-7xl text-sky-400" />
         </motion.div>

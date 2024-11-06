@@ -40,7 +40,7 @@ const Hero = () => {
             >
               I am a passionate front-end developer with a knack for crafting
               robust and scalable web applications. I have honed my skills in
-              like React ,Java Script, Bootstrap, . My goal is to leverage my
+              like React ,Java Script, Bootstrap. My goal is to leverage my
               expertise to create innovative solutions that drive business
               growth and deliver exceptional user experiences.
             </motion.p>
@@ -48,10 +48,10 @@ const Hero = () => {
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
-              className="bg-white text-black font-semibold rounded-3xl px-5 py-2"
+              className="bg-white text-black font-semibold rounded-full px-5 py-3"
             >
               <a href={MeeranResume} download>
-                Download CV
+                Download Resume
               </a>
             </motion.button>
           </div>

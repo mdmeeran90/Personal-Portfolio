@@ -35,7 +35,7 @@ const Projects = () => {
               className="flex flex-col px-7"
             >
               <h1 className="text-2xl">Gearnix Gaming Website - Demo</h1>
-              <p className="py-5 pl-5 pr-5 text-wrap w-1/2 text-center my-0 mx-auto lg:pl-0">
+              <p className="py-5 px-40 lg:px-0 text-center lg:text-start my-0 mx-auto">
                 This is a demo of Gearnix Gaming Website using HTML, CSS.
               </p>
             </motion.div>
@@ -50,9 +50,9 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="flex justify-center lg:justify-center"
+              className="flex justify-center"
             >
-              <img src={Wikipedia} width={350} alt="" />
+              <img src={Wikipedia} width={360} alt="" />
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -61,7 +61,7 @@ const Projects = () => {
               className="flex flex-col px-7"
             >
               <h1 className="text-2xl">Wikipedia - Clone</h1>
-              <p className="py-5 pl-5 pr-5 lg:pl-0 w-1/2 text-center my-0 mx-auto ">
+              <p className="py-5 px-40 lg:px-0 text-center lg:text-start my-0 mx-auto">
                 Wikipedia is a free online encyclopedia that anyone can edit,
                 and millions already have.
               </p>
@@ -69,12 +69,15 @@ const Projects = () => {
           </div>
         </a>
         <a href="#">
-          <div className="flex flex-col text-center lg:text-start lg:flex-row justify-center gap-8" style={{ width: 700 }}>
+          <div
+            className="flex flex-col text-center lg:text-start lg:flex-row justify-center gap-8"
+            style={{ width: 700 }}
+          >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="flex justify-center lg:justify-center"
+              className="flex justify-center"
             >
               <img src={Portfolio} width={250} alt="" />
             </motion.div>
@@ -85,7 +88,7 @@ const Projects = () => {
               className="flex flex-col px-7"
             >
               <h1 className="text-2xl">My Portfolio Website</h1>
-              <p className="py-5 pl-5 pr-5 lg:pl-0 w-1/2 text-center my-0 mx-auto ">
+              <p className="py-5 px-40 lg:px-0 text-center lg:text-start my-0 mx-auto">
                 This is my portfolio website using ReactJS, TailwindCSS.
               </p>
             </motion.div>
