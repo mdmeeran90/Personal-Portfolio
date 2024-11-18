@@ -5,6 +5,9 @@ import { FaJs } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -69,7 +72,7 @@ const Technology = () => {
           <FaBootstrap className="text-7xl text-blue-900" />
         </motion.div>
         <motion.div
-          variants={iconVariants(6)}
+          variants={iconVariants(3.5)}
           initial="initial"
           animate="animate"
           className="p-4"
@@ -83,6 +86,30 @@ const Technology = () => {
           className="p-4 "
         >
           <RiTailwindCssFill className="text-7xl text-sky-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(5.5)}
+          initial="initial"
+          animate="animate"
+          className="p-4 "
+        >
+          <FaNodeJs className="text-7xl text-green-600" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="p-4 "
+        >
+          <SiExpress className="text-7xl text-white" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="p-4 "
+        >
+          <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
       </motion.div>
     </div>

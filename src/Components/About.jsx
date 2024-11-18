@@ -29,12 +29,13 @@ const About = () => {
           className="w-full lg:w-1/2"
         >
           <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6 pt-10">
-              I am a front-end developer builds the front-end portion of
-              websites and web applications—the part users see and interact
-              with. A front-end developer creates websites and applications
-              using web languages such as HTML, CSS, and JavaScript that allow
-              users to access and interact with the site or app.
+            <p className="my-2 mt-12 max-w-xl py-6 pt-10">
+              I am a skilled MERN Stack Developer with expertise in building
+              dynamic, responsive, and scalable web applications. I am
+              proficient in developing full-stack solutions using MongoDB,
+              Express.js, React.js, and Node.js. I have a strong understanding
+              of RESTful APIs, database management, and modern front-end
+              frameworks.
             </p>
           </div>
         </motion.div>
