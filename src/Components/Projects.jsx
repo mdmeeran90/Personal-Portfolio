@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import Wikipedia from "../assets/wikipedia.jfif";
-import Gearnix from "../assets/gearnix.jfif";
-import Portfolio from "../assets/portfolio.png";
+import ProjectData from "../assets/ProjectData";
+import { FaLink } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -14,87 +13,41 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
-      <div className="flex flex-wrap justify-center">
-        <a href="https://gearnix-gaming-demo.netlify.app/" target="blank">
-          <div
-            className="flex flex-col text-center lg:text-start lg:flex-row  justify-center gap-8 mb-20"
-            style={{ width: 700 }}
+
+      {ProjectData.map((project, index) => (
+        <div key={index} className="mb-10 flex flex-wrap lg:justify-center">
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1 }}
+            className="w-full lg:w-1/4"
           >
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-              className="flex justify-center lg:justify-center"
-            >
-              <img src={Gearnix} width={250} alt="" />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col px-7"
-            >
-              <h1 className="text-2xl">Gearnix Gaming Website - Demo</h1>
-              <p className="py-5 px-40 lg:px-0 text-center lg:text-start my-0 mx-auto">
-                This is a demo of Gearnix Gaming Website using HTML, CSS.
-              </p>
-            </motion.div>
-          </div>
-        </a>
-        <a href="https://wikipedia-clone-omega.vercel.app/" target="blank">
-          <div
-            className="flex flex-col text-center lg:text-start lg:flex-row justify-center gap-8 mb-20"
-            style={{ width: 700 }}
+            <img
+              src={project.image}
+              alt={project.title}
+              width={250}
+              height={250}
+              className="mb-6 pl-3"
+            />
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+            className="w-full max-w-xl lg:w-3/4"
           >
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-              className="flex justify-center"
-            >
-              <img src={Wikipedia} width={360} alt="" />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col px-7"
-            >
-              <h1 className="text-2xl">Wikipedia - Clone</h1>
-              <p className="py-5 px-40 lg:px-0 text-center lg:text-start my-0 mx-auto">
-                Wikipedia is a free online encyclopedia that anyone can edit,
-                and millions already have.
-              </p>
-            </motion.div>
-          </div>
-        </a>
-        <a href="#">
-          <div
-            className="flex flex-col text-center lg:text-start lg:flex-row justify-center gap-8"
-            style={{ width: 700 }}
-          >
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-              className="flex justify-center"
-            >
-              <img src={Portfolio} width={250} alt="" />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col px-7"
-            >
-              <h1 className="text-2xl">My Portfolio Website</h1>
-              <p className="py-5 px-40 lg:px-0 text-center lg:text-start my-0 mx-auto">
-                This is my portfolio website using ReactJS, TailwindCSS.
-              </p>
-            </motion.div>
-          </div>
-        </a>
-      </div>
+            <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
+            <p className="mb-4 text-stone-400">{project.description}</p>
+            <p className="mt-4 mb-4 text-stone-400 flex flex-wrap items-center gap-2">
+              {" "}
+              <FaLink />
+              <a href={project.demo} target="_blank">
+                Live Demo
+              </a>
+            </p>
+          </motion.div>
+        </div>
+      ))}
     </div>
   );
 };
