@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-// import MeeranResume from "../assets/Meeran-Resume.pdf";
+import MeeranResume from "../assets/Md Meeran - Resume.pdf";
 
 const container = (delay) => ({
   hidden: { y: 100, opacity: 0 },
@@ -51,7 +51,7 @@ const Hero = () => {
               animate="visible"
               className="bg-white text-black font-semibold rounded-full px-5 py-3"
             >
-              <a href="" download>
+              <a href={MeeranResume} download>
                 Download Resume
               </a>
             </motion.button>
