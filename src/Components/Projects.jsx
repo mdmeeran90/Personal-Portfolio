@@ -13,7 +13,7 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
-
+      
       {ProjectData.map((project, index) => (
         <div key={index} className="mb-10 flex flex-wrap lg:justify-center">
           <motion.div

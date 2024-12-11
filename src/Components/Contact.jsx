@@ -18,7 +18,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="my-5"
         >
-          21, H.M.P.R Street, Ukkadam, Coimbatore-1.
+          23, H.M.P.R Street, Ukkadam, Coimbatore-1.
         </motion.p>
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
@@ -26,15 +26,15 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="my-5"
         >
-          +91 7867982058
+          +91-7867982058
         </motion.p>
         <motion.p
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5 }}
-          className="my-5"
+          className="my-5 text-decoration-underline"
         >
-          meeranfreek2193@gmail.com
+          mohamedmeeran2104@gmail.com
         </motion.p>
       </div>
     </div>
