@@ -1,3 +1,4 @@
+import { ContactDetails } from "../assets/ProjectData";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -18,7 +19,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="my-5"
         >
-          23, H.M.P.R Street, Ukkadam, Coimbatore-1.
+          {ContactDetails.Address}
         </motion.p>
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
@@ -26,7 +27,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="my-5"
         >
-          +91-7867982058
+          {ContactDetails.PhNo}
         </motion.p>
         <motion.p
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +35,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="my-5 text-decoration-underline"
         >
-          mohamedmeeran2104@gmail.com
+          {ContactDetails.Email}
         </motion.p>
       </div>
     </div>

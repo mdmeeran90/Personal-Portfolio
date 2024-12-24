@@ -8,6 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -110,6 +111,14 @@ const Technology = () => {
           className="p-4 "
         >
           <SiMongodb className="text-7xl text-green-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2.7)}
+          initial="initial"
+          animate="animate"
+          className="p-4 "
+        >
+          <FaGitAlt className="text-7xl text-red-500" />
         </motion.div>
       </motion.div>
     </div>

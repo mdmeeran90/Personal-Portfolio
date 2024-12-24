@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ProjectData from "../assets/ProjectData";
+import { ProjectData } from "../assets/ProjectData";
 import { FaLink } from "react-icons/fa";
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
-      
+
       {ProjectData.map((project, index) => (
         <div key={index} className="mb-10 flex flex-wrap lg:justify-center">
           <motion.div

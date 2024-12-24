@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { AboutContent } from "../assets/ProjectData";
 import aboutImg from "../assets/about.jpg";
 const About = () => {
   return (
@@ -30,12 +31,7 @@ const About = () => {
         >
           <div className="flex justify-center lg:justify-start">
             <p className="my-2 mt-12 max-w-xl py-6 pt-10">
-              I am a skilled MERN Stack Developer with expertise in building
-              dynamic, responsive, and scalable web applications. I am
-              proficient in developing full-stack solutions using MongoDB,
-              Express.js, React.js, and Node.js. I have a strong understanding
-              of RESTful APIs, database management, and modern front-end
-              frameworks.
+              {AboutContent}
             </p>
           </div>
         </motion.div>
