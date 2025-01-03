@@ -1,5 +1,5 @@
 import Gearnix from "../assets/gearnix.jfif";
-import Wikipedia from "../assets/Wikipedia.jpg";
+import QuizApp from "../assets/quiz-app.jpg";
 import Portfolio from "../assets/portfolio.png";
 import Ecommerce from "../assets/ecommerce.png";
 import EcommerceMERN from "../assets/Ecommerce-mern.jpg";
@@ -17,11 +17,11 @@ export const ProjectData = [
     demo: "https://gearnix-gaming-demo.netlify.app/",
   },
   {
-    image: Wikipedia,
-    title: "Wikipedia - Clone",
+    image: QuizApp,
+    title: "Quiz App",
     description:
-      "A Wikipedia clone using JavaScript is a web application that replicates Wikipedia's functionality, allowing users to search, view, and navigate articles dynamically, built using JavaScript for interactivity and content management.",
-    demo: "https://wikipedia-clone-omega.vercel.app/",
+      "A dynamic quiz app built with HTML, CSS, and JavaScript to test knowledge through interactive multiple-choice questions and real-time score tracking.",
+    demo: "https://general-knowledge-quiz-application.netlify.app/",
   },
   {
     image: Portfolio,
@@ -52,7 +52,7 @@ export const ProjectData = [
 ];
 
 export const ContactDetails = {
-  Address: "23, H.M.P.R Street, Ukkadam, Coimbatore-1.",
+  Address: "Ukkadam, Coimbatore, TamilNadu - 641001.",
   PhNo: "+91-7867982058",
   Email: "mohamedmeeran2104@gmail.com"
 };
