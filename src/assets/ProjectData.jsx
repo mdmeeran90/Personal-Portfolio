@@ -35,7 +35,7 @@ export const ProjectData = [
     title: "E - Commerce Website",
     description:
       "Creating an eCommerce website in React involves building a dynamic, interactive, and user-friendly frontend that showcases products, handles cart functionality, and provides a smooth shopping experience using React components.",
-    demo: "https://mmshop-ecommerce-website.netlify.app/",
+    demo: "https://fashionfix-jade.vercel.app/",
   },
   {
     image: Todolist,
