@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HeroContent } from "../assets/ProjectData";
-import MeeranResume from "../assets/Md Meeran - Resume.pdf";
+import MeeranResume from "../assets/Mohamed Meeran Resume.pdf";
 
 const container = (delay) => ({
   hidden: { y: 100, opacity: 0 },
