@@ -5,7 +5,7 @@ import Ecommerce from "../assets/ecommerce.png";
 import EcommerceMERN from "../assets/Ecommerce-mern.jpg";
 import Todolist from "../assets/todo-list.png";
 
-export const HeroContent = "I am a passionate Mern Stack Developer with a knack for crafting robust and scalable web applications. I have honed my skills in like Bootstrap, Java Script, React JS, TailwindCSS, Node JS, Express JS and Mongo DB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.";
+export const HeroContent = "I am a passionate Mern Stack Developer with a knack for crafting robust and scalable web applications. I have honed my skills in like HTML, CSS, Bootstrap, Java Script, React JS, TailwindCSS, Node JS, Express JS and Mongo DB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.";
 
 export const AboutContent = "I am a skilled MERN Stack Developer with expertise in building dynamic, responsive, and scalable web applications. I am proficient in developing full-stack solutions using MongoDB, Express.js, React.js, and Node.js. I have a strong understanding of RESTful APIs, database management, and modern front-end frameworks.";
 
